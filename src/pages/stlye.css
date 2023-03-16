@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(../assets/usgs-hoS3dzgpHzw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.container {
+  display: flex;
+}
+
+.title-company1 {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+
+  background: rgba(248, 245, 245, 0.04);
+  backdrop-filter: blur(40px);
+  align-self: center;
+
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 0.34em;
+
+  color: #e4e3e3;
+
+  display: none;
+}
+
+.title-company2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 181px;
+
+  background: rgba(248, 245, 245, 0.04);
+  backdrop-filter: blur(40px);
+  align-self: center;
+
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 0.34em;
+
+  color: #e4e3e3;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 60.375rem;
+  min-height: 100vh;
+
+  background: linear-gradient(
+    180deg,
+    #a83449 0%,
+    #b29aaf 49.88%,
+    #196076 95.83%
+  );
+
+  border-radius: 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 8.875rem 6.8125rem;
+}
+
+aside main h1 {
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  align-items: center;
+  letter-spacing: 0.11em;
+
+  color: #ffffff;
+}
+
+aside main p {
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  letter-spacing: 0.11em;
+
+  color: #f8f5f5;
+
+  margin-bottom: 0.825rem;
+}
+
+aside main span {
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1.3125rem;
+  letter-spacing: 0.11em;
+
+  color: #373636;
+}
+
+.agree-button {
+  display: flex;
+  gap: 0.6875rem;
+
+  margin-bottom: 1.5625rem;
+}
+
+label {
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+.google-button {
+  padding: 0.4375rem 4.625rem;
+
+  background: #f8f5f5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3125rem;
+
+  cursor: pointer;
+}
+
+.google-button:hover {
+  background: #b7b5b5;
+}
+
+.google-button img {
+  max-width: 1.8rem;
+}
+
+.google-button span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #4b4b4b;
+}
+
+.google-button:hover span {
+  color: #f8f5f5;
+}
+
+.divider-top {
+  margin-top: 1.25rem;
+  margin-bottom: 2.25rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.0625rem;
+
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.11em;
+
+  color: #010202;
+}
+
+.divider-top .divider {
+  width: 100%;
+  height: 0rem;
+
+  border: 1px solid #01020247;
+}
+
+.input-information {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6875rem;
+}
+
+.input-information div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-information div label {
+  position: absolute;
+  margin-left: 0.8125rem;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.11em;
+
+  color: #4b4b4b;
+}
+
+.input-field:focus ~ .input-label,
+.input-field:valid ~ .input-label {
+  display: none;
+}
+
+form {
+  margin-bottom: 2.0625rem;
+}
+
+.input-field:focus {
+  outline: 0.0625rem solid rgba(43, 42, 42, 0.915);
+}
+
+.input-information div input {
+  padding: 0.8125rem;
+}
+
+.input-information input {
+  height: 48px;
+
+  background: #f8f5f5;
+  border: 0px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.divider-bottom .divider {
+  width: 100%;
+  height: 0rem;
+
+  border: 1px solid rgba(75, 75, 75, 0.17);
+
+  margin-bottom: 2.125rem;
+}
+
+.continue-button {
+  min-height: 3rem;
+  margin-bottom: 3rem;
+
+  background: #4982ab;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: transparent;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.11em;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+.continue-button:hover {
+  background: #376280;
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .title-company1 {
+    display: flex;
+  }
+
+  .title-company2 {
+    display: none;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  main {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title-company1 {
+    font-size: 3rem;
+  }
+  main {
+    justify-content: center;
+  }
+}
+
+@keyframes dowtop {
+}
