@@ -117,10 +117,44 @@ aside main span {
 }
 
 .agree-button {
+  position: relative;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 0.6875rem;
 
   margin-bottom: 1.5625rem;
+}
+
+.agree-button label {
+  display: flex;
+  align-items: center;
+  gap: 0.6875rem;
+}
+
+.agree-button label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-color: #ffffff;
+
+  border: 1px solid #e4e3e3;
+  border-radius: 8px;
+}
+
+.agree-button input {
+  position: absolute;
+  top: 1;
+  left: 1;
+  width: 18px;
+  height: 18px;
+  z-index: -1;
+}
+
+.agree-button input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg fill='%234982ab' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='64px' height='64px' viewBox='0 0 533.973 533.973' xml:space='preserve' stroke='%234982ab'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' stroke='%23CCCCCC' stroke-width='11.747406'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cg%3E%3Cg%3E%3Cpath d='M477.931,52.261c-12.821-12.821-33.605-12.821-46.427,0l-266.96,266.954l-62.075-62.069 c-12.821-12.821-33.604-12.821-46.426,0L9.616,303.572c-12.821,12.821-12.821,33.604,0,46.426l85.289,85.289l46.426,46.426 c12.821,12.821,33.611,12.821,46.426,0l46.426-46.426l290.173-290.174c12.821-12.821,12.821-33.605,0-46.426L477.931,52.261z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover;
 }
 
 label {
@@ -290,6 +324,10 @@ form {
   background: #376280;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 950px) {
   .container {
     flex-direction: column;
@@ -321,5 +359,38 @@ form {
   }
 }
 
-@keyframes dowtop {
+.title-company2 {
+  animation-name: downtop;
+  animation-duration: 2500ms;
+  animation-delay: 100ms;
+}
+
+main {
+  animation-name: leftright;
+  animation-duration: 2500ms;
+  animation-delay: 100ms;
+}
+
+.title-company1 {
+  animation-name: leftright;
+  animation-duration: 2500ms;
+  animation-delay: 100ms;
+}
+
+@keyframes downtop {
+  0% {
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes leftright {
+  0% {
+    transform: translateX(-550px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
