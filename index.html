@@ -44,16 +44,16 @@
             OR
             <div class="divider"></div>
           </div>
-          <form class="input-information">
-            <div>
+          <form class="input-information" id="form">
+            <div class="input-style">
               <input class="input-field" type="text" id="name" required />
               <label class="input-label" for="name">Name</label>
             </div>
-            <div>
-              <input class="input-field" type="text" id="email" required />
+            <div class="input-style">
+              <input class="input-field" type="email" id="email" required />
               <label class="input-label" for="email">Email</label>
             </div>
-            <div>
+            <div class="input-style">
               <input
                 class="input-field"
                 type="password"
@@ -62,11 +62,13 @@
               />
               <label class="input-label" for="password">Senha</label>
             </div>
+            <div class="divider-bottom">
+              <div class="divider"></div>
+            </div>
+            <button type="submit" class="continue-button" id="btn-submit">
+              Continue
+            </button>
           </form>
-          <div class="divider-bottom">
-            <div class="divider"></div>
-          </div>
-          <button class="continue-button">Continue</button>
           <p>
             Have you already a account? <a href="#"><span>Log In</span></a>
           </p>
@@ -74,5 +76,6 @@
       </aside>
       <div class="title-company2">COMPANY</div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

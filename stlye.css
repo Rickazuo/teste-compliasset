@@ -240,7 +240,7 @@ label {
 .input-information {
   display: flex;
   flex-direction: column;
-  gap: 2.6875rem;
+  /* gap: 2.6875rem; */
 }
 
 .input-information div {
@@ -262,6 +262,10 @@ label {
   letter-spacing: 0.11em;
 
   color: #4b4b4b;
+}
+
+.input-style {
+  margin-bottom: 2.6875rem;
 }
 
 .input-field:focus ~ .input-label,
@@ -301,7 +305,6 @@ form {
 
 .continue-button {
   min-height: 3rem;
-  margin-bottom: 3rem;
 
   background: #4982ab;
   box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
