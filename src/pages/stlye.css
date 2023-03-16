@@ -21,14 +21,14 @@ body {
   height: auto;
 
   background: rgba(248, 245, 245, 0.04);
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(2.5rem);
   align-self: center;
 
   font-family: "Staatliches";
   font-style: normal;
   font-weight: 400;
-  font-size: 64px;
-  line-height: 80px;
+  font-size: 4rem;
+  line-height: 5rem;
   letter-spacing: 0.34em;
 
   color: #e4e3e3;
@@ -41,17 +41,17 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 181px;
+  min-height: 11.3125rem;
 
   background: rgba(248, 245, 245, 0.04);
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(2.5rem);
   align-self: center;
 
   font-family: "Staatliches";
   font-style: normal;
   font-weight: 400;
-  font-size: 64px;
-  line-height: 80px;
+  font-size: 4rem;
+  line-height: 5rem;
   letter-spacing: 0.34em;
 
   color: #e4e3e3;
@@ -95,8 +95,8 @@ aside main p {
   font-family: "Staatliches";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
 
   letter-spacing: 0.11em;
 
@@ -134,21 +134,21 @@ aside main span {
 
 .agree-button label::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   display: block;
   background-color: #ffffff;
 
-  border: 1px solid #e4e3e3;
-  border-radius: 8px;
+  border: 0.0625rem solid #e4e3e3;
+  border-radius: 0.5rem;
 }
 
 .agree-button input {
   position: absolute;
   top: 1;
   left: 1;
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   z-index: -1;
 }
 
@@ -161,8 +161,8 @@ label {
   font-family: "Staatliches";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
   text-align: center;
   letter-spacing: 0.1em;
 
@@ -173,8 +173,8 @@ label {
   padding: 0.4375rem 4.625rem;
 
   background: #f8f5f5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
   border: transparent;
 
   display: flex;
@@ -222,8 +222,8 @@ label {
   font-family: "Staatliches";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
   text-align: center;
   letter-spacing: 0.11em;
 
@@ -234,7 +234,7 @@ label {
   width: 100%;
   height: 0rem;
 
-  border: 1px solid #01020247;
+  border: 0.0625rem solid #01020247;
 }
 
 .input-information {
@@ -257,8 +257,8 @@ label {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   letter-spacing: 0.11em;
 
   color: #4b4b4b;
@@ -282,19 +282,19 @@ form {
 }
 
 .input-information input {
-  height: 48px;
+  height: 3rem;
 
   background: #f8f5f5;
-  border: 0px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
+  border: 0rem solid #000000;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
 }
 
 .divider-bottom .divider {
   width: 100%;
   height: 0rem;
 
-  border: 1px solid rgba(75, 75, 75, 0.17);
+  border: 0.0625rem solid rgba(75, 75, 75, 0.17);
 
   margin-bottom: 2.125rem;
 }
@@ -304,15 +304,15 @@ form {
   margin-bottom: 3rem;
 
   background: #4982ab;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.25rem;
   border: transparent;
 
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 19px;
-  line-height: 22px;
+  font-size: 1.1875rem;
+  line-height: 1.375rem;
   text-align: center;
   letter-spacing: 0.11em;
   color: #ffffff;
@@ -354,9 +354,20 @@ a {
   .title-company1 {
     font-size: 3rem;
   }
+
   main {
     justify-content: center;
   }
+
+  .agree-button label {
+    font-size: 0.8rem;
+  }
+}
+
+.title-company1 {
+  animation-name: leftright;
+  animation-duration: 2500ms;
+  animation-delay: 100ms;
 }
 
 .title-company2 {
@@ -366,12 +377,6 @@ a {
 }
 
 main {
-  animation-name: leftright;
-  animation-duration: 2500ms;
-  animation-delay: 100ms;
-}
-
-.title-company1 {
   animation-name: leftright;
   animation-duration: 2500ms;
   animation-delay: 100ms;
